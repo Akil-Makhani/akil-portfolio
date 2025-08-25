@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+}
+
+.container-wide {
+  @apply max-w-6xl mx-auto px-4;
+}
+.section {
+  @apply py-16 md:py-24;
+}
+.card {
+  @apply bg-slate-900/60 border border-slate-800 rounded-2xl p-6 shadow-xl;
+}
+.badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-sm border border-slate-700 bg-slate-800/60;
+}
+.link {
+  @apply underline decoration-slate-500 underline-offset-4 hover:decoration-slate-300;
+}
